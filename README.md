@@ -19,6 +19,7 @@ Made in typescript, AltimitMovement.js should:
  - Fixed Game_Player regionId thanks to GaryCXJk code
  - Removed obsolete plugin command from MV
  - Added airship auto getOn when clicked/touched option in plugin parameters
+ - Add example shapes in plugin help
  - Factorized code
 
 Also in typescript, AltimitMovementDebug.js should:

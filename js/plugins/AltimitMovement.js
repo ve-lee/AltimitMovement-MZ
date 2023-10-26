@@ -37,18 +37,8 @@
 // Fixed Game_Player regionId thanks to GaryCXJk code
 // Removed obsolete plugin command from MV
 // Added airship auto getOn when clicked/touched option in plugin parameters
+// Example shapes available in plugin help
 // Factorized code
-// Shapes exemples:
-// Rectangle (this example makes a tile-sized square)
-// <rect x='0.0' y='0.0' width='1.0' height='1.0' />
-// Circle (this example makes a tile-sized circle)
-// <circle cx='0.5' cy='0.5' r='0.5' />
-// Line (this example makes a line from top-left to bottom-right)
-// <line x1='0' y1='0' x2='1' y2='1' />
-// Polygon must be convex and clock-wise-winding (this example makes a triangle)
-// <polygon points='0.0,1.0 0.5,0.0 1.0,1.0' />
-// Regular polygon (this example makes a 5-pointed polygon; a pentagon)
-// <regular cx='0.5' cy='0.5' rx='0.5' ry='0.5' p='5' />
 //=============================================================================
 /*:
  * @target MZ
@@ -238,9 +228,26 @@
  * Usage:
  *  Plugin will automatically apply when ON.
  *
+ *
+ * Shapes exemples:
+ * Rectangle (this example makes a tile-sized square)
+ * <rect x='0.0' y='0.0' width='1.0' height='1.0' />
+ *
+ * Circle (this example makes a tile-sized circle)
+ * <circle cx='0.5' cy='0.5' r='0.5' />
+ *
+ * Line (this example makes a line from top-left to bottom-right)
+ * <line x1='0' y1='0' x2='1' y2='1' />
+ *
+ * Polygon must be convex and clock-wise-winding (this example makes a triangle)
+ * <polygon points='0.0,1.0 0.5,0.0 1.0,1.0' />
+ *
+ * Regular polygon (this example makes a 5-pointed polygon; a pentagon)
+ * <regular cx='0.5' cy='0.5' rx='0.5' ry='0.5' p='5' />
+ *
  * About:
- *  Version 0.50 Beta
- *  Website https://github.com/AltimitSystems/mv-plugins/tree/master/movement
+ *  Version 0.50 Beta with typescript
+ *  Website https://github.com/ve-lee/AltimitMovement-MZ
  * @end
  * =============================================================================
  * Plugin Commands
