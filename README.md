@@ -25,5 +25,5 @@ Made in typescript, AltimitMovement.js should:
 Also in typescript, AltimitMovementDebug.js should:
 
  - show collision shapes by default
- - can disable it in plugin parameters
- - can toggle it with F11 or Plugin command 
+ - allow to disable it in plugin parameters
+ - allow to toggle it with F11 or Plugin command 
