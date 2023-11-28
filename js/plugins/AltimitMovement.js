@@ -522,7 +522,7 @@
 (() => {
     const pluginName = 'AltimitMovement';
     const DOM_PARSER = new DOMParser();
-    const PARAMETERS = PluginManager.parameters('AltimitMovement');
+    const PARAMETERS = PluginManager.parameters(pluginName);
     // const GAME_PAD_THRESHOLD = 1 / 5;
     // const GAME_PAD_LIMIT = 1 - GAME_PAD_THRESHOLD;
     /**
@@ -1121,7 +1121,7 @@
                     return false;
             }
         }
-        if (character instanceof Game_Follower) {
+        if (!(character instanceof Game_Follower)) {
             if (character.isThrough())
                 return false;
         }
@@ -1831,6 +1831,7 @@
                 Collider.intersect(this._x + vx, this._y + vy, collider, entryX, entryY, events[ii].collider())) {
                 // Normal priority player-touch/event-touch
                 events[ii].start();
+                this._touchTarget = null;
             }
             else if (events[ii]._trigger === 2) {
                 // Event touch is encasing
